@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Survey form</title>
+    </head>
+    <body>
+        <header>
+            <h1>Survey Form</h1>
+            <p>Please answer all the questions below!</p>
+            <p>For multiple-choice questions, you may select more than one answer if applicable.</p>
+        </header>
+        <form>
+            <section>
+                <label style="display: block;">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+            
+                <label style="display: block;">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address">
+            </section>
+
+            <section>
+                <label style="display:block;" > How Satisfied are you with our service?</label>
+
+                <input type="radio" id="very_satisfied" name="rate_experience">
+                <label for="very_satisfied">Very Satisfied</label>
+
+                <input type="radio" id="satisfied" name="rate_experience">
+                <label for="satisfied">Satisfied</label>
+                
+                <input type="radio" id="neutral" name="rate_experience">
+                <label for="neutral">Neutral</label>
+                
+                <input type="radio"id=dissatisfied name="rate_experience">
+                <label for="dissatified"> Dissatisfied</label>
+                
+                <input type="radio" id="very_dissatisfied" name="rate_experience">
+                <label for="very_dissatisfied">Very Dissatified</label>
+            </section>
+
+            <section>
+                <label style="display: block;">What Features do you value most?</label>
+                
+                <input type="checkbox" id="easy_to_use" name="Easy to use">
+                <label for="easy_to_use">Easy to Use</label>
+
+                <input type="checkbox" id="design" name="Design">
+                <label for="design">Design</label>
+
+                <input type="checkbox" id="customer_support" name="Customer Support">
+                <label for="customer_support">Customer Support</label>
+            </section>   
+            <section>
+                <label style="display: block;">What best describes you? </label>
+                
+                <select id="bestdescribe" name="bestdescribe">
+                    <option value="student">Student</option>
+                    <option value="professional">Professional</option>
+                    <option value="hobbyist">Hobbyist</option>
+                    <option value="other">Other</option>
+                </select>
+
+            </section>
+
+            <section>
+                <label style="display: block;">Additional Comments or Suggestions</label>
+                <textarea id="feedback" name="feedback"></textarea>
+            </section>
+            <footer> 
+                <button type="submit" value="submit" style="display: block;"> Submit</button>
+            </footer>
+        </form>
+    </body>
+
+
+</html>
+
